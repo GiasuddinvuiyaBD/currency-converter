@@ -1,0 +1,26 @@
+Assalamu alaikum
+Today i have completed my currency convert project.
+
+At first i have completed HTML Aand css part. After that i have done JavaScript part. 
+
+Now I am going to talk about my javascript part. In JavaScript i have called four function. 
+Two for select tag and two for input element. 
+
+Inside the select element i seted two javascript change event 
+like this : 
+currencyOneElm.addEventListener('change',calculate)
+currencyTwoElm.addEventListener('change',calculate)
+
+and inside the input event i seted two javascript input event 
+like this : 
+amoutOneElm.addEventListener('input',calculate)
+amoutTwoElm.addEventListener('input',calculate)
+
+Inside all the eventListener i have called calculate funciton that i already call as a main funciton.
+
+In the main calculate functions i have resived inputs value and select elements value. Then i requested an API server. After that i resive currency data form api. Inside the fetch conversion_rates and then i calculate it with input elemetn 1. In this way i have completed my simple currency convert project. 
+
+Here is my Gihub link : 
+Here is live link : 
+
+

@@ -3,12 +3,8 @@
 
 const currencyOneElm = document.querySelector('#currencyOne');
 const currencyTwoElm = document.querySelector('#currencyTwo');
-
-
 const amoutOneElm = document.querySelector('#amoutOne');
 const amoutTwoElm = document.querySelector('#amoutTwo');
-
-const currencyOneVsTwoElm = document.querySelector('#currencyOneVsTwo');
 
 const curOneElm = document.querySelector('#curOne')
 const curTwoElm = document.querySelector('#curTwo')
@@ -28,12 +24,13 @@ function calculate()
 	{
 		// console.log(data)
 		const rate = data.conversion_rates[currency_two];
+
 		// console.log(rate)
 		curOneElm.innerText = `${amout1} ${currency_one} equal`;
-		curTwoElm.innerText = `  ${rate} ${currency_two}`
-		// currencyOneVsTwoElm.innerText = `1 ${currency_one} equal ${rate} ${currency_two}`;
+		curTwoElm.innerText = `  ${rate} ${currency_two}`;
 		
-		amount2 = (amout1 * rate).toFixed(2)
+		// currencyOneVsTwoElm.innerText = `1 ${currency_one} equal ${rate} ${currency_two}`;
+		amount2 = (amout1 * rate).toFixed(2);
 		// amoutTwoElm.value = (amoutOneElm.value * rate).toFixed(2)
 		amoutTwoElm.value = amount2
 	})
